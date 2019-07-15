@@ -109,7 +109,7 @@ public class HelloController {
 
 在SpringBoot中可以很方便的配置
 
-![图片无法加载](https://github.com/Ywfy/Beginner-in-SpringBoot/blob/master/appli.png)
+![图片无法加载](https://github.com/Ywfy/luckymoney/blob/master/appli.png)
 
 重点只需要在application.yml中配置
 ```
