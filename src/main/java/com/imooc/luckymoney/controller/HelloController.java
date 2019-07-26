@@ -1,11 +1,8 @@
-package com.imooc.luckymoney;
+package com.imooc.luckymoney.controller;
 
+import com.imooc.luckymoney.properties.LimitConfig;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import java.math.BigDecimal;
 
 /**
  * @Controller + @ResponseBody = @RestController
@@ -17,7 +14,7 @@ public class HelloController {
     @Autowired
     private LimitConfig limitConfig;
 
-    //@GetMapping("/say")
+
     @PostMapping("/say")
     //@RequestMapping("/say")
     //@ResponseBody

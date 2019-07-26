@@ -1,0 +1,38 @@
+package com.imooc.luckymoney.enums;
+
+public enum ResultEnum {
+    UNKNOWN_ERROR(-1, "未知错误"),
+    SUCCESS(0, "成功"),
+    TIGHT(100, "You are so tight"),
+    THANKS(101, "Thank you!"),
+    GOOD(102, "Good job!"),
+    GOD(103, "Have you made a fortune?")
+    ;
+
+    private Integer code;
+
+    private String msg;
+
+    ResultEnum(Integer code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+
+    public String getMsg() {
+        return msg;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ResultEnum{" +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
+                '}';
+    }
+}

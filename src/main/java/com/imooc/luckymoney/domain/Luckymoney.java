@@ -1,8 +1,9 @@
-package com.imooc.luckymoney;
+package com.imooc.luckymoney.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.DecimalMin;
 import java.math.BigDecimal;
 
 @Entity
@@ -12,6 +13,7 @@ public class Luckymoney {
     @GeneratedValue
     private Integer id;
 
+    @DecimalMin(value = "0.01", message = "红包最低不能低于0.01元")
     private BigDecimal money;
 
     private String producer;
@@ -48,5 +50,15 @@ public class Luckymoney {
 
     public void setReceiver(String receiver) {
         this.receiver = receiver;
+    }
+
+    @Override
+    public String toString() {
+        return "Luckymoney{" +
+                "id=" + id +
+                ", money=" + money +
+                ", producer='" + producer + '\'' +
+                ", receiver='" + receiver + '\'' +
+                '}';
     }
 }
