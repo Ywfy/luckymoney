@@ -1,5 +1,6 @@
 # luckymoney
 初学SpringBoot项目,慕课网《2小时快速上手Spring Boot》学习笔记
+后续学习《Spring Boot进阶之Web进阶》课程学习笔记[跳转地址]()
 
 ## SpringBoot初识
 现在SpringBoot很火，但是不要一看SpringBoot就觉得好难，就抗拒去学习、使用它。其实它非常容易，它简化了以往使用Spring工作中太多的配置，使用起来非常爽。
